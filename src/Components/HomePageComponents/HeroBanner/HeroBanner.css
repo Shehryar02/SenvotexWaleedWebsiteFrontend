@@ -1,0 +1,190 @@
+.heroBannerMainContainer {
+    background-color: #f2f0f1;
+}
+
+.heroBannerContent h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #1f1f1f;
+}
+
+.heroBannerContent p {
+    color: #606060;
+}
+
+.heroBannerContent button {
+    border: 1px solid #292929;
+    border-radius: 30px;
+    height: 50px;
+    width: 35%;
+    background-color: #292929;
+    color: white;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats div h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.secondStat {
+    border-right: 1.5px solid #dbd9d9;
+    border-left: 1.5px solid #dbd9d9;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+.hero-banner-container {
+  position: relative; 
+}
+
+.hero-banner-star-one {
+  position: absolute;
+  top: 20px;  
+  right: 10px; 
+  width: 70px;
+}
+
+.hero-banner-star-two {
+  position: absolute;
+  /* width: 70px; */
+  top: 180px;  
+  left: 30px; 
+}
+
+.heroBannerBelowContainer {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.brandNameScrolled {
+    margin: 0 30px;
+}
+
+.heroBannerImage {
+    width: 530px !important;
+}
+
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heroBannerContent h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.heroBannerContent p{
+    font-size: 14px;
+}
+
+.stats div p{
+    font-size: 20px;
+}
+
+.heroBannerImage {
+    width: 420px !important;
+}
+
+}
+
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .heroBannerContent h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.heroBannerContent p{
+    font-size: 14px;
+}
+
+.stats div h3{
+    font-size: 30px;
+}
+
+.heroBannerImage {
+    width: 400px !important;
+}
+}
+
+
+/* Small devices (phones, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heroBannerImage {
+    width: 400px !important;
+}
+}
+
+/* Extra small devices (phones, <576px) */
+@media (min-width: 421px) and (max-width: 575.98px) {
+.heroBannerContent h1{
+    font-size: 46px;
+    font-weight: 900;
+}
+
+.heroBannerContent p{
+    font-size: 18px;
+}
+
+.stats div h3{
+    font-size: 30px;
+}
+
+.heroBannerImage {
+    width: 400px !important;
+}
+
+.heroBannerContent button {
+    font-size: 18px;
+    width: 45%;
+}
+
+.hero-banner-star-one {
+    display: none;
+}
+
+.hero-banner-star-two {
+    display: none;
+}
+
+}
+
+
+@media (min-width: 300px) and (max-width: 420px) {
+.heroBannerContent h1{
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.heroBannerContent p{
+    font-size: 14px;
+}
+
+.stats div h3{
+    font-size: 26px;
+}
+
+.heroBannerImage {
+    width: 350px !important;
+}
+
+.heroBannerContent button {
+    font-size: 18px;
+    width: 45%;
+}
+
+.hero-banner-star-one {
+    display: none;
+}
+
+.hero-banner-star-two {
+    display: none;
+}
+}

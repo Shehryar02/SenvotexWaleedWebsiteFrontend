@@ -1,0 +1,30 @@
+.customerTestimonyMainDiv {
+    border: 1px solid #d2d2d2;
+    border-radius: 18px;
+    width: 40%;
+}
+
+.customerTestimonyMainDiv p {
+    color: #646464;
+}
+
+.customerTestimonyMainDiv h3 {
+    font-weight: 700;
+}
+
+.testimonyStars {
+    color: #fec633;
+}
+
+.testimonyNameCheckIcon {
+    background-color: green;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.marqueeBox {
+    width: 40%;
+    min-width: 1px ;
+}

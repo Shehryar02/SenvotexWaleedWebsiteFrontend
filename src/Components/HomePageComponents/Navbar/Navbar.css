@@ -1,0 +1,127 @@
+
+.mobile-corner-menu {
+  position: absolute;
+  top: 40px; /* just below the hamburger */
+  right: 0;
+  background: #232323;
+  border-top: 1px solid white;
+  border-radius: 6px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.mobile-corner-menu button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  text-align: left;
+  width: 150px;
+  color: white !important;
+  font-weight: 600;
+}
+
+.mobile-corner-menu button:hover {
+  background: #f0f0f0;
+}
+
+
+.firstBox h2 {
+    font-weight: 700;
+}
+
+.secondBox button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent; 
+  transition: border-color 0.3s ease;
+}
+
+.secondBox button:hover {
+  border-bottom-color: #555; 
+}
+
+.secondBox button.active {
+  border-bottom-color: white;
+  font-weight: 600; 
+  color: white; 
+  border-radius: 2px;
+}
+
+.thirdBox {
+    width: 40%;
+}
+
+.thirdBox input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+}
+
+.thirdBox div span {
+    border: 0px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #f0f0f0;
+    color: gray;
+}
+
+.fourthBox img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.thirdBox {
+    width: 30%;
+}
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .thirdBox {
+    width: 30%;
+}
+
+ .secondBox button {
+  padding: 6px 10px;
+ }
+ 
+}
+
+
+/* Small devices (phones, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .firstBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.navBarIconSmallScreen {
+  font-size: 36px;
+}
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+    .firstBox h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navBarIconSmallScreen {
+  font-size: 30px;
+}
+}

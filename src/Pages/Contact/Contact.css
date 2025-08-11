@@ -1,0 +1,103 @@
+/* Full Section Background */
+.contact-section {
+  background: linear-gradient(
+  135deg, 
+  #0f0f0f 0%, 
+  #141414 40%, 
+  #0a0a0a 70%, 
+  #000000 100%
+);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Style */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Headings */
+.contact-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact-heading h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+/* Contact Details */
+.contact-details {
+  margin-top: 30px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 18px;
+  gap: 12px;
+}
+
+.detail-item i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Social Icons */
+.social-section {
+  margin-top: 30px;
+}
+
+.social-section h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  background: white;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: 0.3s;
+    width: 50px;
+    height: 50px;
+
+}
+
+.social-icons a:hover {
+  background: #007BFF;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 25px;
+  }
+
+  .detail-item {
+    font-size: 16px;
+  }
+}

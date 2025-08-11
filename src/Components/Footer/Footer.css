@@ -1,0 +1,151 @@
+.contactDetails-lightMode h3 {
+  color: #6a7380;
+}
+
+.contactDetails-lightMode h6 {
+  color: #6a7380;
+}
+
+.stayConnectWMe-lightMode input {
+  color: white;
+  background-color: #151515;
+}
+
+.stayConnectWMe-lightMode div {
+  border-bottom: 1px solid white;
+}
+
+.footer-top-lightMode p {
+  color: #e3e6eb;
+}
+
+.stayConnectWMe-lightMode h3 {
+  color: #6a7380;
+}
+
+.socialLinksBtns-lightMode a {
+  border: 1px solid white;
+  background-color: #151515;
+  color: white;
+  transition: background-color 0.5s ease, color 1s ease;
+  text-decoration: none;
+}
+
+.socialLinksBtns-lightMode a:hover {
+  background-color: white;
+  color: #151515;
+}
+
+.footer-lightMode {
+  background-color: #151515;
+}
+
+.footer-top-lightMode h2 {
+  color: white;
+}
+
+.iconFAwesomOppose-lightMode {
+  color: white;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2ecc71;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
+
+
+.footerInput:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgb(0, 0, 0) inset !important; /* Fixes background */
+  -webkit-text-fill-color: white !important; /* Makes text visible */
+  caret-color: white !important;
+  transition: background-color 5000s ease-in-out 0s; /* Prevents flash */
+}
+
+.footerInput:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px rgb(0, 0, 0) inset !important;
+  -webkit-text-fill-color: white !important;
+  caret-color: white !important;
+}
+
+
+
+.socialLinksBtns-lightMode a {    
+    border-radius: 100px;
+    width: 24%;
+    height: 45px;
+    font-weight: 700;
+}
+
+.footer-top-lightMode h2{
+    font-weight: 700;
+}
+
+.stayConnectWMe-lightMode h3 {
+    font-weight: 700;
+}
+
+.stayConnectWMe-lightMode div i:hover {
+    cursor: pointer;
+}
+
+.stayConnectWMe-lightMode input {    
+    border: 0px;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.stayConnectWMe-lightMode input:focus {
+    outline: none;
+}
+
+.contactDetails-lightMode h3{
+    font-weight: 700;
+}
+
+.btmwording1 {
+  color: #767a84;
+}
+
+.btmwording2 {
+  color: #767a84;
+  font-weight: 700;
+}
+
+.btmwording2:hover {
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .socialLinksBtns-lightMode a {
+        font-size: 12px;
+    }
+    
+    .btmwording1 {
+  font-size: 12px;
+}
+
+    .btmwording2 {
+font-size: 12px;
+}
+
+
+  }

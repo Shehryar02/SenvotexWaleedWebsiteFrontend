@@ -1,0 +1,30 @@
+/* *{
+  color: black !important;
+} */
+
+
+/* Make navbar fixed at the top */
+.navBar {
+  background-color: #1f1f1f !important;
+  color: white;
+}
+
+.navBar button {
+  color: white;
+}
+
+.navbar-fixed {
+  position: sticky; /* or use fixed if you want it always pinned */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* keep it above other elements */
+  background: white; /* match your design */
+  box-shadow: 0 2px 10px rgba(94, 72, 63, 0.9); /* subtle shadow */
+}
+
+/* Optional: Smooth transition when scrolling */
+.navbar-fixed.scrolled {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}

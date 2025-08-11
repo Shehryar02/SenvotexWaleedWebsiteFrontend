@@ -1,0 +1,109 @@
+.paginationGuide,.filterGuide {
+    color: #686868;
+}
+
+.filterGuide span{
+    color: black;
+}
+
+.brandNameProduct {
+    color: gray;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem; /* spacing between buttons */
+}
+
+
+.page-link {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  color: #333; /* base text color */
+  background-color: #fff; /* button background */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.page-link:hover {
+  background-color: rgb(219, 217, 217); /* light accent background on hover */
+  border-color: white; /* accent border on hover */
+  color: #282828; /* accent text color on hover */
+}
+
+.page-item.active .page-link {
+  background-color: #282828; /* accent color background */
+  border-color: #282828;
+  color: #fff; /* white text for active */
+  cursor: default;
+
+  box-shadow: 0 0 8px 2px rgba(133, 132, 132, 0.7); /* example: red glow */
+  outline: none; /* remove default outline */
+}
+
+.page-item.active .page-link:hover {
+  background-color: #282828; /* slightly darker accent on hover active */
+  border-color: #282828;
+}
+
+/* Disabled states if you add prev/next buttons later */
+.page-item.disabled .page-link {
+  color: #282828;
+  cursor: not-allowed;
+  background-color: #282828;
+  border-color: #282828;
+}
+
+.productImageAll  {
+    width: 270px;
+    height: 270px;
+    border-radius: 16px;
+    background-color: #efeeec;
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .productImageAll  {
+    width: 220px;
+    height: 220px;
+}
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .productImageAll  {
+    width: 220px;
+    height: 220px;
+}
+}
+
+/* Small devices (phones, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+      .productImageAll  {
+    width: 260px;
+    height: 260px;
+}
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+      .productImageAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageAll img {
+    width: 100%;
+    height: 100%;
+}
+}
