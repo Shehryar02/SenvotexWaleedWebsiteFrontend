@@ -2,13 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './HeroBanner.css';
 
-import heroBannerImage from '../../../assets/homePage/heroBannerCropped2.png';
+import heroBannerImage from '../../../assets/homePage/heroBannerAI2.webp';
 import heroBannerStars from '../../../assets/homePage/heroBannerStars.svg';
+import logo from '../../../assets/homePage/logoRemBG.png'
 import brandName from '../../../assets/homePage/brandName.svg';
 
 import Marquee from 'react-fast-marquee';
+import { useNavigate } from 'react-router-dom';
 
 const HeroBanner = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className='container-fluid heroBannerMainContainer'>
@@ -22,7 +25,7 @@ const HeroBanner = () => {
                   designed to bring out your individuality and cater to your sense of
                   style.
                 </p>
-                <button>Shop Now</button>
+                <button onClick={()=>navigate('/products')}>Our Products</button>
                 <div className="stats d-flex mt-lg-4 mt-md-2 mt-sm-3 mt-3 gap-xl-4 gap-lg-2 gap-md-2 gap-sm-2 gap-2">
                   <div className='firstStat d-flex flex-column align-items-center justify-content-start'>
                     <h3>200+</h3>
@@ -68,13 +71,18 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      <div className="container-fluid mb-lg-5 mb-md-4 mb-sm-4 mb-5 py-lg-4 py-md-4 py-sm-3 py-3 heroBannerBelowContainer">
-        <Marquee gradient={false} speed={50} pauseOnHover>
-          <img src={brandName} alt="" className='brandNameScrolled' />
-          <img src={brandName} alt="" className='brandNameScrolled' />
-          <img src={brandName} alt="" className='brandNameScrolled' />
-          <img src={brandName} alt="" className='brandNameScrolled' />
-          <img src={brandName} alt="" className='brandNameScrolled' />
+      <div className="container-fluid mb-lg-5 mb-md-4 mb-sm-4 mb-0 py-lg-2 py-md-2 py-sm-1 py-1 heroBannerBelowContainer">
+        <Marquee gradient={false} speed={50}>
+          <img src={logo} className='brandNameScrolledImg ' alt="" />
+          <h1 className='brandNameScrolled ms-1 me-5'>MORVEN</h1>
+          <img src={logo} className='brandNameScrolledImg ' alt="" />
+          <h1 className='brandNameScrolled ms-1 me-5'>MORVEN</h1>
+          <img src={logo} className='brandNameScrolledImg ' alt="" />
+          <h1 className='brandNameScrolled ms-1 me-5'>MORVEN</h1>
+          <img src={logo} className='brandNameScrolledImg ' alt="" />
+          <h1 className='brandNameScrolled ms-1 me-5'>MORVEN</h1>
+          <img src={logo} className='brandNameScrolledImg ' alt="" />
+          <h1 className='brandNameScrolled ms-1 me-5'>MORVEN</h1>
         </Marquee>
       </div>
     </>

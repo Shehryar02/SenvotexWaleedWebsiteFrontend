@@ -2,10 +2,13 @@ import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
 
-import image1 from '../../assets/aboutPage/image1.png';
-import image2 from '../../assets/aboutPage/image2.png';
-import image3 from '../../assets/aboutPage/image3.png';
-import image5 from '../../assets/aboutPage/image5.png';
+import image1 from '../../assets/aboutPage/image1.webp';
+import image2 from '../../assets/aboutPage/image2.webp';
+import image3 from '../../assets/aboutPage/image3.webp';
+import image5 from '../../assets/aboutPage/image5.webp';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const slidesData = [
   {
@@ -26,6 +29,8 @@ const slidesData = [
 ];
 
 const About = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="container-fluid about-section py-5">
       <div className="container">
@@ -96,6 +101,7 @@ const About = () => {
                 Every jacket we craft is more than attire — it’s armor for ambition. Built for those who set trends, not follow them.
               </p>
               <motion.button
+              onClick={()=>{navigate('/products')}}
                 className="btn highlight-btn mt-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

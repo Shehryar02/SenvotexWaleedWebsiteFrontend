@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Products.css';
 import { FaChevronDown } from "react-icons/fa";
 
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 // -------------------- IMPORT IMAGES --------------------
 // Original Series
 import originalImg1 from '../../assets/productDetailPage/Original/RemBG/img1.webp';
@@ -68,10 +71,22 @@ const jacketSeries = [
 const allProducts = [...originalSeries, ...signatureSeries, ...jacketSeries];
 
 const Products = () => {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const sortFromURL = queryParams.get("sort");
+
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(8);
   const [sortType, setSortType] = useState("Most Popular");
   const [activeCategory, setActiveCategory] = useState("All");
+
+  // Set sortType from URL if available
+  useEffect(() => {
+    if (sortFromURL) {
+      setSortType(sortFromURL);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [sortFromURL]);
 
   // Filter products based on category
   const filteredProducts =
@@ -102,12 +117,13 @@ const Products = () => {
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
     setCurrentPage(1); // reset to first page when category changes
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className='container-fluid my-lg-5 my-md-3 my-sm-3 my-3'>
       <div className="container">
-        <div className='d-flex justify-content-between align-items-center mb-lg-4 mb-md-4 mb-4 mt-lg-0 mt-md-5 mt-sm-5 mt-5'>
+        <div className='d-flex productsTopBar justify-content-between align-items-center mb-lg-4 mb-md-4 mb-4 mt-lg-0 mt-md-5 mt-sm-5 mt-5'>
           {/* Category Buttons Large Devices*/}
           <div className="categorySelector largerDevice d-flex">
             <button
@@ -151,7 +167,7 @@ const Products = () => {
             </div>
 
           {/* Sort Dropdown */}
-          <div className='d-flex gap-lg-0 flex-lg-row flex-column gap-0 justify-content-end align-items-center flex-wrap'>
+          <div className='d-flex gap-lg-4 flex-lg-row flex-column gap-0 justify-content-end align-items-center flex-wrap'>
             <h6 className='paginationGuide m-0'>
               Showing {indexOfFirst + 1}-{Math.min(indexOfLast, filteredProducts.length)} of {filteredProducts.length} Products
             </h6>
@@ -181,7 +197,8 @@ const Products = () => {
               <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
                 <div className='productContent d-flex flex-column gap-lg-1 gap-md-1 gap-2'>
                   <div className="productImageAll">
-                    <img src={item.image} alt={item.name} className='img-fluid' />
+                    <img src={item.image} alt={item.name} className='img-fluid'   loading={index < 4 ? "eager" : "lazy"} // first row loads immediately
+  onLoad={() => setImagesLoaded(prev => prev + 1)}/>
                   </div>
                   <div className="productName mb-lg-2 mb-md-2 ">
                     <h6 className='m-0'>{item.name}</h6>

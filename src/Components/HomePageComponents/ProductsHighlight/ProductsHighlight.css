@@ -36,7 +36,7 @@
     border-radius: 30px;
     color: #242424;
     width: 20%;
-    height: 50px;
+    height: 45px;
     font-weight: 600;
     font-size: 18px;
 }
@@ -58,7 +58,7 @@
   }
 
   .productPrice {
-    width: 52%;
+    width: 35% !important;
     margin-top: 5px;
   }
 
@@ -67,6 +67,17 @@
     height: 60px;
     font-size: 22px;
 }
+
+.productImage {
+    width: 350px;
+    height: 350px;
+}
+
+.productImage img{
+    width: 350px;
+    height: 350px;
+} 
+
 }
 
 /* Small devices (phones, ≥576px) */
@@ -76,7 +87,7 @@
   }
 
   .productPrice {
-    width: 68%;
+    width: 70% !important;
     margin-top: 5px;
   }
 
@@ -130,8 +141,9 @@
 
   .viewAllButton {
     width: 60%;
-    height: 60px;
-    font-size: 24px;
-    font-weight: 500 !important;
+    height: 40px;
+    border: 1px solid #c0bebe;
+    font-size: 20px;
+    font-weight: 400 !important;
 }
 }

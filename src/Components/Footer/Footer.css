@@ -1,9 +1,9 @@
 .contactDetails-lightMode h3 {
-  color: #6a7380;
+  color:  rgb(206, 205, 205);;;
 }
 
 .contactDetails-lightMode h6 {
-  color: #6a7380;
+  color:  rgb(206, 205, 205);;;
 }
 
 .stayConnectWMe-lightMode input {
@@ -20,7 +20,7 @@
 }
 
 .stayConnectWMe-lightMode h3 {
-  color: #6a7380;
+  color:  rgb(206, 205, 205);;;
 }
 
 .socialLinksBtns-lightMode a {
@@ -62,6 +62,26 @@
   z-index: 9999;
   animation: fadeInOut 3s ease forwards;
 }
+
+.footerLogo {
+  width: 60px;
+}
+
+
+.footer-top-lightMode h2 {
+  margin: 0px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 200; /* Anton is bold by default */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* Gradient magic */
+  background: linear-gradient(90deg, #8f681f, #e0cb87, #edca89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* for Chrome/Safari */
+  background-clip: text; /* for Firefox */
+}
+
 
 @keyframes fadeInOut {
   0% { opacity: 0; transform: translateX(-50%) translateY(20px); }

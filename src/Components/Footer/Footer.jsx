@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Footer.css'
 import { useNavigate } from 'react-router-dom';
 
+import logo from '../../assets/homePage/logoRemBG.png'
+
 const Footer = () => {
  const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
@@ -59,10 +61,11 @@ const navigateToLegalNotice = () => {
     <div className="container-fluid footer-lightMode">
       <div className="container">
         <div className="pt-5 footer-top-lightMode">
-          <h2>
-            <span className="span-lightMode">Senv</span>otex.
+          <h2 className='m-0 d-flex align-items-center'>
+            <img src={logo} className='footerLogo me-2' alt="" />
+            Morven Leathers
           </h2>
-          <p>A stunning digital designer portfolio website template for you.</p>
+          <p>Premium leather craftsmanship, tailored for your lifestyle.</p>
         </div>
 
         <div className="mt-md-5 mt-4 socialLinksBtns-lightMode d-flex gap-0 justify-content-between align-items-center">
@@ -118,14 +121,7 @@ const navigateToLegalNotice = () => {
 
       <div className="mt-4 text-center privacyPolicy-lightMode">
   <small className="d-flex justify-content-center align-items-center">
-    <p className="m-0 btmwording1">© 2025 Senvotex. All rights reserved. |{" "}</p>
-    <p className="m-0">
-      <p className="m-0 ps-1">
-        <span className="btmwording2 pe-1 no-select" onClick={navigateToPrivacyPolicy}>Privacy Policy</span> 
-        <span className="btmwording1">&</span>
-        <span className="btmwording2 ps-1 no-select" onClick={navigateToLegalNotice}>Legal Notice</span>
-      </p>
-    </p>
+    <p className="m-0 btmwording1">© 2025 MorvenLeathers. All rights reserved.</p>
   </small>
 </div>
 

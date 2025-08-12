@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .heroBannerMainContainer {
     background-color: #f2f0f1;
 }
@@ -6,6 +8,7 @@
     font-size: 60px;
     font-weight: 900;
     color: #1f1f1f;
+    
 }
 
 .heroBannerContent p {
@@ -45,6 +48,7 @@
 }
 
 .hero-banner-star-one {
+  filter: invert(20%) sepia(7%) saturate(146%) hue-rotate(394deg) brightness(55%) contrast(89%) !important;
   position: absolute;
   top: 20px;  
   right: 10px; 
@@ -52,6 +56,7 @@
 }
 
 .hero-banner-star-two {
+    filter: invert(20%) sepia(7%) saturate(146%) hue-rotate(394deg) brightness(55%) contrast(89%) !important;
   position: absolute;
   /* width: 70px; */
   top: 180px;  
@@ -59,12 +64,21 @@
 }
 
 .heroBannerBelowContainer {
-    background-color: #1f1f1f;
+    background-color: #1b1a1a;
     color: white;
 }
 
 .brandNameScrolled {
-    margin: 0 30px;
+    margin: 0px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400; /* Anton is bold by default */
+    letter-spacing: 1px; /* Wider spacing gives a stronger look */
+    text-transform: uppercase; /* Optional, adds a tough blocky feel */
+}
+
+
+.brandNameScrolledImg {
+    width: 80px;
 }
 
 .heroBannerImage {
@@ -112,6 +126,8 @@
 .heroBannerImage {
     width: 400px !important;
 }
+
+
 }
 
 
@@ -119,6 +135,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .heroBannerImage {
     width: 400px !important;
+}
+.brandNameScrolled{
+    font-size: 40px !important;
 }
 }
 
@@ -154,6 +173,10 @@
     display: none;
 }
 
+.brandNameScrolled{
+    font-size: 40px !important;
+}
+
 }
 
 
@@ -186,5 +209,9 @@
 
 .hero-banner-star-two {
     display: none;
+}
+
+.brandNameScrolled{
+    font-size: 40px !important;
 }
 }

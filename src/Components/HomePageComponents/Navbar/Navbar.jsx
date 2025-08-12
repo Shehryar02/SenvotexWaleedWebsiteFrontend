@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
-import logo from '../../../assets/homePage/logo.png';
+import logo from '../../../assets/homePage/logoRemBG.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -55,10 +55,10 @@ const Navbar = () => {
           {/* Search */}
           <div className="thirdBox d-none d-md-block">
             <div className="input-group">
-              <span className="input-group-text border-end-0">
-                <i className="bi bi-search"></i>
+              <span className="input-group-text border-end-0 navBarSendBtn">
+                <i className="bi bi-send"></i>
               </span>
-              <input type="text" className="form-control border-start-0" placeholder="Search for products..." />
+              <input type="text" className="form-control navBarSearch border-start-0" placeholder="Enter email to subscribe..." />
             </div>
           </div>
 

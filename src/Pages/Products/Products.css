@@ -2,6 +2,18 @@
   display: none;
 }
 
+
+.productsTopBar {
+  position: sticky;
+  top: 70px; /* distance from top of viewport */
+  z-index: 100; /* stays above other elements */
+  background-color: white !important; /* prevent transparency issues */
+  padding: 10px 0; /* optional: spacing */
+  border-bottom: 1px solid #ddd; 
+  width: 101%;
+}
+
+
 .productRating span{
   color: #1f1f1f  !important;
   font-size: 18px;
@@ -213,6 +225,15 @@
 
 }
 
+.productsTopBar {
+  position: sticky;
+  top: 75px; /* distance from top of viewport */
+  z-index: 100; /* stays above other elements */
+  background-color: white; /* prevent transparency issues */
+  padding: 10px 0; /* optional: spacing */
+  border-bottom: 1px solid #ddd; 
+}
+
 }
 
 /* Medium devices (tablets, ≥768px) */
@@ -247,6 +268,15 @@
 
 .categorySelector button {
   font-size: 12px;
+}
+
+.productsTopBar {
+  position: sticky;
+  top: 90px; /* distance from top of viewport */
+  z-index: 100; /* stays above other elements */
+  background-color: white; /* prevent transparency issues */
+  padding: 10px 0; /* optional: spacing */
+  border-bottom: 1px solid #ddd; 
 }
 }
 
@@ -445,6 +475,16 @@
 
 
 @media (max-width: 575.98px) {
+
+  .productsTopBar {
+  position: sticky;
+  top: 65px; /* distance from top of viewport */
+  z-index: 100; /* stays above other elements */
+  background-color: white; /* prevent transparency issues */
+  padding: 10px 0; /* optional: spacing */
+  border-bottom: 1px solid #ddd; 
+}
+
   .productPrice h4{
     font-weight: 500;
     font-size: 20px;

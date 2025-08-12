@@ -1,4 +1,24 @@
+.navBarSendBtn {
+  cursor: pointer;
+}
 
+.navBarSendBtn:hover {
+  color: #232323;
+  font-size: 18px;
+}
+
+.navBarSearch {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navBarSearch:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #f0f0f0;
+}
 .mobile-corner-menu {
   position: absolute;
   top: 40px; /* just below the hamburger */
@@ -75,8 +95,8 @@
 }
 
 .fourthBox img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    /* height: 40px; */
     border-radius: 100px;
 }
 
