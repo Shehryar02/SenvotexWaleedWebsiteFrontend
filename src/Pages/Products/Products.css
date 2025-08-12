@@ -1,5 +1,122 @@
+.smallerDevice {
+  display: none;
+}
+
+.productRating span{
+  color: #1f1f1f  !important;
+  font-size: 18px;
+}
+
+.productPrice {
+  background-color: #1f1f1f;
+  width: 45%;
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+}
+.productPrice h4{
+  font-size: 16px;
+
+}
+
+.smallerDevice select {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Custom dropdown styles */
+.custom-form-select {
+  width: 200px;           /* Set your desired width */
+  height: 40px;           /* Set your desired height */
+  background-color: #1f1f1f; /* Background color */
+  color: #fff;            /* Text color */
+  border: 1px solid #555; /* Border color */
+  border-radius: 6px;     /* Optional: rounded corners */
+  padding-left: 12px;     /* Padding inside the dropdown */
+  /* Remove default arrow for full control (optional) */
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+}
+
+/* Change arrow color and position - optional */
+/* If you want to keep default arrow, skip this */
+
+/* Dropdown hover/focus */
+.custom-form-select:focus {
+  border-color: white;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  color: #fff ;
+  background-color: #222;
+}
+
+/* Placeholder color */
+.custom-form-select option {
+  background-color: #1f1f1f;
+  color: #908f8f;
+}
+
+/* Option colors (may vary by browser) */
+.custom-form-select option:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+
+.categorySelector {
+  border-radius: 16px;
+  background-color: #1f1f1f;
+  /* padding: 10px; */
+  width: 50%;
+}
+
+.categorySelector button {
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  width: 50%;
+  height: 45px;
+  /* padding: 10px;   */
+}
+
+.categorySelectorBtnOne.active,
+.categorySelectorBtnOne-Additional.active,
+.categorySelectorBtnTwo.active,
+.categorySelectorBtnThree.active {
+  background-color: #616161;  /* Example: Bootstrap blue */
+  color: white;               /* Change text color for contrast */
+}
+
+
+.categorySelector button:hover {
+  background-color: #616161;
+}
+
+.categorySelectorBtnOne {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.categorySelectorBtnOne-Additional {
+    border-left: 1px solid white !important;
+  /* border-right: 1px solid white !important; */
+  border-radius: 0px !important;
+}
+
+.categorySelectorBtnThree {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.categorySelectorBtnTwo {
+  border-left: 1px solid white !important;
+  border-right: 1px solid white !important;
+  border-radius: 0px !important;
+}
+
 .paginationGuide,.filterGuide {
-    color: #686868;
+    color: #333;
 }
 
 .filterGuide span{
@@ -74,6 +191,28 @@
     width: 220px;
     height: 220px;
 }
+
+.categorySelector button {
+  font-size: 14px;
+}
+
+.productRating span{
+  color: #1f1f1f  !important;
+  font-size: 18px;
+}
+
+.productPrice {
+  background-color: #1f1f1f;
+  width: 50%;
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+}
+.productPrice h4{
+  font-size: 16px;
+
+}
+
 }
 
 /* Medium devices (tablets, ≥768px) */
@@ -81,6 +220,33 @@
     .productImageAll  {
     width: 220px;
     height: 220px;
+}
+
+
+.productRating span{
+  color: #1f1f1f  !important;
+  font-size: 18px;
+}
+
+.productPrice {
+  background-color: #1f1f1f;
+  width: 50%;
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+}
+.productPrice h4{
+  font-size: 16px;
+
+}
+
+
+.categorySelector {
+  width: 60%;
+}
+
+.categorySelector button {
+  font-size: 12px;
 }
 }
 
@@ -90,10 +256,35 @@
     width: 260px;
     height: 260px;
 }
+
+.smallerDevice {
+  display: block;
+}
+
+.largerDevice {
+  display: none !important;
+}
+
+.productRating span{
+  color: #1f1f1f  !important;
+  font-size: 18px;
+}
+
+.productPrice {
+  background-color: #1f1f1f;
+  width: 45%;
+  border-radius: 16px;
+  padding: 12px;
+  color: white;
+}
+.productPrice h4{
+  font-size: 16px;
+
+}
 }
 
 /* Extra small devices (phones, <576px) */
-@media (max-width: 575.98px) {
+@media (min-width: 480px) and (max-width: 575.98px) {
       .productImageAll {
     width: 100%;
     height: 100%;
@@ -106,4 +297,191 @@
     width: 100%;
     height: 100%;
 }
+
+.smallerDevice {
+  display: block;
+}
+
+.smallerDevice select {
+  width: 120%;
+  font-size: 16px;
+}
+
+.largerDevice {
+  display: none !important;
+}
+
+.paginationGuide {
+  font-size: 18px;
+}
+
+.sortByWordin {
+  font-size: 18px;
+}
+
+}
+
+
+@media (min-width: 400px) and (max-width: 479px) {
+      .productImageAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageAll img {
+    width: 100%;
+    height: 100%;
+}
+
+.smallerDevice {
+  display: block;
+}
+
+.smallerDevice select {
+  width: 100%;
+  font-size: 16px;
+}
+
+.largerDevice {
+  display: none !important;
+}
+
+.paginationGuide {
+  font-size: 14px;
+}
+
+.sortByWordin {
+  font-size: 14px;
+}
+}
+
+
+
+
+@media (min-width: 350px) and (max-width: 399px) {
+      .productImageAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageAll img {
+    width: 100%;
+    height: 100%;
+}
+
+.smallerDevice {
+  display: block;
+}
+
+.smallerDevice select {
+  width: 85%;
+  font-size: 14px;
+}
+
+.largerDevice {
+  display: none !important;
+}
+
+.paginationGuide {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.sortByWordin {
+  font-size: 11px;
+  /* font-weight: 700; */
+}
+}
+
+
+@media (min-width: 300px) and (max-width: 349px) {
+      .productImageAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageAll img {
+    width: 100%;
+    height: 100%;
+}
+
+.smallerDevice {
+  display: block;
+}
+
+.smallerDevice select {
+  width: 100%;
+  font-size: 10px;
+}
+
+.largerDevice {
+  display: none !important;
+}
+
+.paginationGuide {
+  font-size: 10px;
+}
+
+.sortByWordin {
+  font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+  .productPrice h4{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  .productPrice {
+    width: 40%;
+    border-radius: 16px;
+    padding: 10px !important;
+    background-color: #1f1f1f;
+    /* padding: 0px !important; */
+    margin: 0px !important;
+  }
+
+  .productPrice h4 span {
+    font-weight: 700;
+  }
+
+  .productRating span {
+    font-size: 20px;
+    color: #1f1f1f !important;
+  }
+
+  .productRating-Got {
+    font-size: 24px;
+
+  }
+
+  .productName h6{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .brandNameProduct {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+  }
 }
